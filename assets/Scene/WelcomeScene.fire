@@ -439,7 +439,10 @@
     "node": {
       "__id__": 7
     },
-    "_enabled": true
+    "_enabled": true,
+    "click_audio": {
+      "__uuid__": "9bcccde3-7bbf-4db4-95d9-1f0fe65d3cda"
+    }
   },
   {
     "__type__": "cc.Node",

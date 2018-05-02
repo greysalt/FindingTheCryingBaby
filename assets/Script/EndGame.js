@@ -11,12 +11,15 @@ cc.Class({
     	timeDisplay: {
     		default: null,
     		type: cc.Label
-    	}
+    	},
+        congrats_audio: cc.AudioClip
     },
 
     onLoad () {
     	this.stopTimer()
         this.scoreDisplay.string = Global.score + 100
+
+        cc.audioEngine.playEffect(this.congrats_audio)
     },
     //结束计时
     stopTimer: function () {

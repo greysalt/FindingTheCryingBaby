@@ -12,7 +12,11 @@ cc.Class({
             default: null,
             serializable: false
         },
-        bao_cry: {
+        bao_cry1: {
+            default: null,
+            type: cc.SpriteFrame
+        },
+        bao_cry2: {
             default: null,
             type: cc.SpriteFrame
         },
@@ -52,26 +56,34 @@ cc.Class({
             default: null,
             type: cc.SpriteFrame
         },
-
+        click_audio1: cc.AudioClip,
+        click_audio2: cc.AudioClip,
         type: 1
     },
     onLoad () {
       var self = this      
       // 添加触摸事件
       this.node.on(cc.Node.EventType.TOUCH_START,function(event){
-        if(self.game.poped === false) {
-           if(self.type === 'cry') {
+        if(self.game.poped === false) {           
+           if(self.type === 'cry1' || self.type === 'cry2') {
+                cc.audioEngine.playEffect(self.click_audio2);
                 Global.score += 100
                 self.game.scoreDisplay.string = '得分：' + Global.score
                 self.game.level += 1
                 self.game.popup('Good Job !')
+                
             } else if (self.type === 'jia') {
+                cc.audioEngine.playEffect(self.click_audio1);
                 self.game.popup('发现了 嫌弃佳\n然而并没什么*用')
+                
             } else {
+                cc.audioEngine.playEffect(self.click_audio1);
                 Global.score -= 100
                 self.game.scoreDisplay.string = '得分：' + Global.score
                 self.game.popup('好像不对哦~')
-            } 
+                
+            }
+
         } else {
             cc.log('nothing')
         }
@@ -79,8 +91,11 @@ cc.Class({
     },
     newTile : function (width) {
       switch (this.type) {
-        case 'cry':
-            this.node.getComponent(cc.Sprite).spriteFrame = this.bao_cry
+        case 'cry1':
+            this.node.getComponent(cc.Sprite).spriteFrame = this.bao_cry1
+            break;
+        case 'cry2':
+            this.node.getComponent(cc.Sprite).spriteFrame = this.bao_cry2
             break;
         case 'jia':
             this.node.getComponent(cc.Sprite).spriteFrame = this.jia

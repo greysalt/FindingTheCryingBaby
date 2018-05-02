@@ -98,11 +98,14 @@
     },
     "_enabled": true,
     "numLabel": null,
-    "bao_cry": {
-      "__uuid__": "05e9d3e9-92cf-4b44-8e51-f55a03d710f8"
+    "bao_cry1": {
+      "__uuid__": "62d48131-072e-4095-ae01-8b5784f8e663"
+    },
+    "bao_cry2": {
+      "__uuid__": "65d52e74-25ec-4c87-bd91-1229f58bb88a"
     },
     "bao_1": {
-      "__uuid__": "5185d5c6-8b9c-40db-b207-de2c8ea31a19"
+      "__uuid__": "31423df4-59b5-43c5-a0d7-2b3c5c93dc04"
     },
     "bao_2": {
       "__uuid__": "b6974f39-6c6b-412a-ad48-5110b08bb6fe"
@@ -127,6 +130,12 @@
     },
     "jia": {
       "__uuid__": "077fa563-9aaf-419e-8c66-97eba0b94d89"
+    },
+    "click_audio1": {
+      "__uuid__": "9bcccde3-7bbf-4db4-95d9-1f0fe65d3cda"
+    },
+    "click_audio2": {
+      "__uuid__": "c1540cc0-2837-4c76-b096-f6ed16c0e0e5"
     },
     "type": 1
   },

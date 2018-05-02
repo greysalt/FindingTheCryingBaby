@@ -538,6 +538,11 @@
     "levelDisplay": {
       "__id__": 10
     },
-    "level": 1
+    "bgMusic": {
+      "__uuid__": "b67bd421-1e28-4070-a293-76fcb088cad3"
+    },
+    "level": 1,
+    "poped": false,
+    "interval": null
   }
 ]

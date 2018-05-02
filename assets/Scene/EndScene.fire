@@ -442,7 +442,10 @@
     "node": {
       "__id__": 7
     },
-    "_enabled": true
+    "_enabled": true,
+    "click_audio": {
+      "__uuid__": "9bcccde3-7bbf-4db4-95d9-1f0fe65d3cda"
+    }
   },
   {
     "__type__": "cc.Node",
@@ -603,9 +606,9 @@
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
-      "r": 136,
-      "g": 136,
-      "b": 136,
+      "r": 255,
+      "g": 102,
+      "b": 0,
       "a": 255
     },
     "_cascadeOpacityEnabled": true,
@@ -677,9 +680,9 @@
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
-      "r": 136,
-      "g": 136,
-      "b": 136,
+      "r": 255,
+      "g": 102,
+      "b": 0,
       "a": 255
     },
     "_cascadeOpacityEnabled": true,
@@ -934,6 +937,9 @@
     },
     "timeDisplay": {
       "__id__": 18
+    },
+    "congrats_audio": {
+      "__uuid__": "bbcded94-44b3-4589-bad0-c472ff26b354"
     }
   }
 ]
